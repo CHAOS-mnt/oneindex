@@ -11,6 +11,7 @@ $item['thumb'] = onedrive::thumbnail($item['path']);
 	  <source src="<?php e($item['downloadUrl']);?>" type="video/mp4">
 	</video>
 	<div class="mdui-p-t-5 ">
+		<button id="appplayers" class="mdui-btn mdui-ripple mdui-color-theme-accent">外部播放器播放</button>		
 		<ul class="mdui-menu mdui-menu-cascade" id="menu">
 			<li class="mdui-menu-item">
 			<a href="intent:<?php e($url);?>;end" class="mdui-ripple">MXPlayer(FREE)</a>
@@ -24,10 +25,8 @@ $item['thumb'] = onedrive::thumbnail($item['path']);
 			<li class="mdui-menu-item">
 			<a href="nplayer-<?php e($url);?>" class="mdui-ripple">nPlayer(ios)</a>
 			</li>
-			
-		</ul>
 
-		<button id="appplayers" class="mdui-btn mdui-ripple mdui-color-theme-accent">外部播放器播放</button>
+		</ul>
 	</div>
 	<!-- 固定标签 -->
 	<div class="mdui-textfield">

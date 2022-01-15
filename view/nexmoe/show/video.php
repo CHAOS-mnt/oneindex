@@ -9,6 +9,7 @@ $item['thumb'] = onedrive::thumbnail($item['path']);
 	<div class="nexmoe-item">
 	<div class="mdui-center" id="dplayer"></div>
 	<div class="mdui-p-t-5 ">
+		<button id="appplayers" class="mdui-btn mdui-ripple mdui-color-theme-accent">外部播放器播放</button>
 		<ul class="mdui-menu mdui-menu-cascade" id="menu">
 			<li class="mdui-menu-item">
 			<a href="intent:<?php e($url);?>;end" class="mdui-ripple">MXPlayer(FREE)</a>
@@ -24,8 +25,6 @@ $item['thumb'] = onedrive::thumbnail($item['path']);
 			</li>
 			
 		</ul>
-
-		<button id="appplayers" class="mdui-btn mdui-ripple mdui-color-theme-accent">外部播放器播放</button>
 	</div>
 	<!-- 固定标签 -->
 	<div class="mdui-textfield">
