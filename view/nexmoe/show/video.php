@@ -12,7 +12,7 @@ $item['thumb'] = onedrive::thumbnail($item['path']);
 		<button id="appplayers" class="mdui-btn mdui-ripple mdui-color-theme-accent">外部播放器播放</button>
 		<ul class="mdui-menu mdui-menu-cascade" id="menu">
 			<li class="mdui-menu-item">
-			<a href="intent:<?php e($url);?>;end" class="mdui-ripple">MXPlayer(FREE)</a>
+			<a href="intent:<?php e($url);?>#Intent;package=com.mxtech.videoplayer.ad;end" class="mdui-ripple">MXPlayer(FREE)</a>
 			</li>
 			<li class="mdui-menu-item">
 			<a href="vlc://<?php e($url);?>" class="mdui-ripple">VLC(PC)</a>
@@ -21,7 +21,7 @@ $item['thumb'] = onedrive::thumbnail($item['path']);
 			<a href="potplayer://<?php e($url);?>" class="mdui-ripple">PotPlayer(PC)</a>
 			</li>
 			<li class="mdui-menu-item">
-			<a href="nplayer-<?php e($url);?>" class="mdui-ripple">nPlayer(ios)</a>
+			<a href="nplayer-<?php e($url);?>" class="mdui-ripple">nPlayer(iOS)</a>
 			</li>
 			
 		</ul>
