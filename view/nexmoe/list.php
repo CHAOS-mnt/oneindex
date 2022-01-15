@@ -193,7 +193,7 @@ $(function(){
 
 	$('.icon-sort').on('click', function () {
         let sort_type = $(this).attr("data-sort"), sort_order = $(this).attr("data-order");
-        let sort_order_to = (sort_order === "less") ? "more" : "less";
+        let sort_order_to = (sort_order === "more") ? "less" : "more";
 
         $('li[data-sort]').sortElements(function (a, b) {
             let data_a = $(a).attr("data-sort-" + sort_type), data_b = $(b).attr("data-sort-" + sort_type);
