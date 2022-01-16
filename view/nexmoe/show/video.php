@@ -42,8 +42,8 @@ const dp = new DPlayer({
 	    type: '<?php e((pathinfo($item["name"], PATHINFO_EXTENSION) === 'flv') ? 'flv' : 'auto'); ?>'
 	}
 });
-var inst = new mdui.Menu('#appplayers', '#menu');
 
+var inst = new mdui.Menu('#appplayers', '#menu');
 // method
 document.getElementById('appplayers').addEventListener('click', function () {
   inst.open();
