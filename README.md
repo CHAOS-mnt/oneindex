@@ -1,8 +1,13 @@
 # OneIndex
-Onedrive Directory Index
+Onedrive Directory Index 自用版本
 
 ## Changelog
-2022/01/15 删除视频播放页面的引用地址，添加外部程序打开按钮，修复nexmoe主题的排序bug
+
+- 删除视频播放页面的引用地址
+- 修复 nexmoe 主题的排序 bug
+- 为视频页面添加外部程序打开按钮，支持 VLC, Potplayer, MX Player, nPlayer
+- 调整页面宽度，优化 PC 浏览体验
+- 修改文件展示页面进入方式为 GET 并加入识别参数，不再与下载链接共用同一 URL,便于分享文件展示页面
 
 ## 功能：
 不占用服务器空间，不走服务器流量，  
