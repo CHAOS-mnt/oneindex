@@ -8,7 +8,7 @@ $item['thumb'] = onedrive::thumbnail($item['path']);
 <div class="mdui-container-fluid">
 	<div class="nexmoe-item">
 	<video class="mdui-video-fluid mdui-center" preload controls poster="<?php @e($item['thumb']);?>">
-	  <source src="<?php e($item['downloadUrl']);?>" type="video/mkv">
+	  <source src="<?php e($item['downloadUrl']);?>" type="video/webm">
 	</video>
 	<div class="mdui-p-t-5 ">
 		<button id="appplayers" class="mdui-btn mdui-ripple mdui-color-theme-accent">外部播放器播放</button>		
