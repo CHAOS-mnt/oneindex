@@ -71,9 +71,9 @@ class IndexController{
 		$item = $this->items[$this->name];
 		if ($item['folder']) {//是文件夹
 			$url = $_SERVER['REQUEST_URI'].'/';
-		}elseif(!is_null($_GET['t']) ){//缩略图
+		}elseif(!is_null($_GET['t'])){//缩略图
 			$url = $this->thumbnail($item);
-		}elseif($_SERVER['REQUEST_METHOD'] == 'POST' || !is_null($_GET['s']) ){
+		}elseif(!is_null($_GET['s'])){//展示网页
 			return $this->show($item);
 		}else{//返回下载链接
 			$url = $item['downloadUrl'];

@@ -183,10 +183,8 @@ function thumb(){
 $(function(){
 	$('.file a').each(function(){
 		$(this).on('click', function () {
-			var form = $('<form target=_blank method=post></form>').attr('action', $(this).attr('href')).get(0);
-			$(document.body).append(form);
-			form.submit();
-			$(form).remove();
+			var url = $(this).attr('href') + '&s';
+			window.open(url);
 			return false;
 		});
 	});
