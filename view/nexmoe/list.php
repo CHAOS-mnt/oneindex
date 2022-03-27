@@ -183,7 +183,7 @@ function thumb(){
 $(function(){
 	$('.file a').each(function(){
 		$(this).on('click', function () {
-			var url = $(this).attr('href') + '&s';
+			var url = $(this).attr('href');
 			window.open(url);
 			return false;
 		});
